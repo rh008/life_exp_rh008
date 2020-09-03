@@ -32,17 +32,10 @@ summary(gapminder_unfiltered)
 
 Maximum life expectancy by year
 ```{r}
-
-gapminder_unfiltered %>%
-  group_by(country) %>%
-  filter(lifeExp==max(lifeExp)) %>%
-  arrange(year)
-
 gapminder_unfiltered %>%
   group_by(year) %>%
   filter(lifeExp==max(lifeExp)) %>%
   arrange(year)
-
 
 ```
 
