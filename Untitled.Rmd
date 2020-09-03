@@ -9,6 +9,51 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Abstract
+
+Here we will analyze the famous paper from Oeppen and Vaupel (2002)
+
+# Analysis
+
+Here we load the data.
+```{r}
+# install.packages('gapminder')
+library(gapminder)
+data('gapminder_unfiltered')
+gapminder_unfiltered
+```
+
+
+Here is the summary of the dataset
+```{r}
+summary(gapminder_unfiltered)
+```
+
+
+Maximum life expectancy by year
+```{r}
+
+gapminder_unfiltered %>%
+  group_by(country) %>%
+  filter(lifeExp==max(lifeExp)) %>%
+  arrange(year)
+
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp==max(lifeExp)) %>%
+  arrange(year)
+
+
+```
+
+
+
+
+
+
+
+
+
 
 
 
