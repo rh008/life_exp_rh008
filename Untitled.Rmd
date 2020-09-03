@@ -1,0 +1,16 @@
+---
+title: "week2_notes"
+author: "Rui Huang"
+date: "9/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+
