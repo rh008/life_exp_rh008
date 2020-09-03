@@ -1,0 +1,42 @@
+---
+title: "week2_notes"
+author: "Rui Huang"
+date: "9/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- GitHub is a website that hosts git repos
+
+Pipeline 1 (for private use)  
+- Create a repo on yoru local (i.e. your laptop)
+- Create a repo on remote (GitHub)
+- Connect the two with `git remote add`
+- Push (move changes from local to remote) changes to GitHub.
+
+Pipeline 2 (for this class)  
+- A repo is already made up on GitHub
+- Clone (i.e. download) the repo from remote to local
+- The two (remote and local ) are already linked.
+
+
+```
+git remote add origin https://github.com/rh008/life_exp_rh008.git
+git branch -M master
+git push -u origin master
+```
+
+- `git remote add <nickname_for_remote> <url>`
+- `git push` moves commit history from local to remote
+- ``
+
+
+
+
+
+
+
+
